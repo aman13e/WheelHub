@@ -91,11 +91,11 @@ export default function Home() {
               ut.flex
             </p>
             <div className=" justify-center">
-              <Link
-                to="/signup"
-                className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300"
-              >
-                View Cars
+              <Link to="/signup">
+                <button className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">
+                  {" "}
+                  View Cars
+                </button>
               </Link>
             </div>
           </div>
