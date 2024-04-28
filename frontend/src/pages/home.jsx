@@ -88,15 +88,15 @@ export default function Home() {
               maiores, quidem cum sapiente est ut, eius velit aliquid modi
               veritatis recusandae! Iste quis laboriosam quasi nesciunt ex
               consequatur repudiandae saepe aliquam nisi unde! Aliquam, neque
-              ut.
+              ut.flex
             </p>
-            <div className="flex justify-center">
-              <a
-                href="/signup"
+            <div className=" justify-center">
+              <Link
+                to="/signup"
                 className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300"
               >
                 View Cars
-              </a>
+              </Link>
             </div>
           </div>
           <div className="bg-gray-100 h-12"></div>
