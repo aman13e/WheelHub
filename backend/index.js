@@ -14,7 +14,6 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  //   res.send("<h1 >Server is Running</h1>");
   return res.status(200).send("Welcome to WheelHub");
 });
 
