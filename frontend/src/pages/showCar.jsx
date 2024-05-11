@@ -13,7 +13,7 @@ export default function ShowCar() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5000/cars/${id}`)
+      .get(`https://wheel-hub-eu9h.vercel.app/cars/${id}`)
       .then((res) => {
         setCar(res.data);
         setLoading(false);

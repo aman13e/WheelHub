@@ -18,7 +18,7 @@ function SignUp() {
     };
     setLoading(true);
     axios
-      .post("http://localhost:5000/users/signup", data)
+      .post("https://wheel-hub-eu9h.vercel.app/users/signup", data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Account created successfully", { variant: "success" });

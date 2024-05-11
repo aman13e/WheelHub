@@ -18,7 +18,10 @@ function Signin() {
     e.preventDefault();
     setLoading(true);
     axios
-      .post("http://localhost:5000/users/signin", { email, password })
+      .post("https://wheel-hub-eu9h.vercel.app/users/signin", {
+        email,
+        password,
+      })
       .then((res) => {
         authctx.signin(res?.data?.access_token, res?.data?.user?.isAdmin);
         setLoading(false);

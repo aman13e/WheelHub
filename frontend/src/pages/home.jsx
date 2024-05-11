@@ -21,7 +21,7 @@ export default function Home() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:5000/cars")
+      .get("https://wheel-hub-eu9h.vercel.app/cars")
       .then((res) => {
         setCars(res.data);
         console.log(res.data);

@@ -18,7 +18,7 @@ function DeleteCar() {
     }
     setLoading(true);
     axios
-      .delete(`http://localhost:5000/cars/${id}`, {
+      .delete(`https://wheel-hub-eu9h.vercel.app/cars/${id}`, {
         headers: {
           Authorization: `${token}`,
         },

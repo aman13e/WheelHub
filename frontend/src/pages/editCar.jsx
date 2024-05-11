@@ -18,7 +18,7 @@ function EditCar() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5000/cars/${id}`)
+      .get(`https://wheel-hub-eu9h.vercel.app/cars/${id}`)
       .then((res) => {
         setPrice(res.data.price);
         console.log(res);
@@ -40,7 +40,7 @@ function EditCar() {
     };
     setLoading(true);
     axios
-      .put(`http://localhost:5000/cars/${id}`, data, {
+      .put(`https://wheel-hub-eu9h.vercel.app/cars/${id}`, data, {
         headers: {
           Authorization: `${token}`,
         },
