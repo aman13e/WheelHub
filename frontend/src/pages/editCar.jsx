@@ -18,7 +18,7 @@ function EditCar() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://wheel-hub-eu9h.vercel.app/cars/${id}`)
+      .get(`https://wheelhub-serv.onrender.com/cars/${id}`)
       .then((res) => {
         setPrice(res.data.price);
         console.log(res);
@@ -40,7 +40,7 @@ function EditCar() {
     };
     setLoading(true);
     axios
-      .put(`https://wheel-hub-eu9h.vercel.app/cars/${id}`, data, {
+      .put(`https://wheelhub-serv.onrender.com/cars/${id}`, data, {
         headers: {
           Authorization: `${token}`,
         },

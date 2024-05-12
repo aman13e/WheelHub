@@ -18,7 +18,7 @@ function SignUp() {
     };
     setLoading(true);
     axios
-      .post("https://wheel-hub-eu9h.vercel.app/users/signup", data)
+      .post("https://wheelhub-serv.onrender.com/users/signup", data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Account created successfully", { variant: "success" });

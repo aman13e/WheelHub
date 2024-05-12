@@ -23,7 +23,7 @@ function CreateCar() {
     const token = localStorage.getItem("access_token");
 
     axios
-      .post("https://wheel-hub-eu9h.vercel.app/cars", data, {
+      .post("https://wheelhub-serv.onrender.com/cars", data, {
         headers: {
           Authorization: `${token}`,
         },
